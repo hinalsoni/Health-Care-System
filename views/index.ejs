@@ -1,0 +1,16 @@
+<% include ./partials/header.ejs %>
+
+  <!-- Content goes here --> 
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4"><%= title %></h1>
+      <% if(title == "Patients") { %>
+        <a class="btn btn-primary" href="/contact-list" role="button">Patient List</a>
+      <% } %>
+
+
+    </div>
+  </div>
+
+<% include ./partials/footer.ejs %>
